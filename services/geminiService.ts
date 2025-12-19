@@ -16,8 +16,8 @@ export async function verifyWithGemini(
     ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   }
 
-  // Fix: Upgraded to gemini-3-pro-preview for complex hazard validation and multimodal reasoning
-  const model = 'gemini-3-pro-preview';
+  // Fix: Switched to gemini-1.5-flash for better free-tier limits
+  const model = 'gemini-1.5-flash';
 
   const systemInstruction = `You are a Crisis Validator for an emergency response app. Analyze the provided image and user description.
   1. Determine if there is a visible hazard (Fire, Flood, Accident, Roadblock, etc.).
