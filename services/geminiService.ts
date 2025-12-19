@@ -16,8 +16,8 @@ export async function verifyWithGemini(
     ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   }
 
-  // Fix: Switched to gemini-1.5-flash for better free-tier limits
-  const model = 'gemini-1.5-flash';
+  // Fix: Used specific version 001 to resolve 404 not found error
+  const model = 'gemini-1.5-flash-001';
 
   const systemInstruction = `You are a Crisis Validator for an emergency response app. Analyze the provided image and user description.
   1. Determine if there is a visible hazard (Fire, Flood, Accident, Roadblock, etc.).
