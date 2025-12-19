@@ -1,0 +1,8 @@
+{
+  "name": "Community Guardian",
+  "description": "A disaster management platform where users report hazards (floods, fires, roadblocks) verified by Gemini AI before appearing on a public crisis map.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
